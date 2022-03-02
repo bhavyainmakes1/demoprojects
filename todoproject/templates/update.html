@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            Task Update
+        </div>
+        <div class="card-body">
+            <div style="position:absolute;left:35%;top:100px;border:5px solid darkcyan;padding:100px;">
+  <form method="POST">
+      {% csrf_token %}
+     {{form.as_p}}
+      <input type="submit" class="btn btn-danger"></center>
+  </form>
+</div></div>
+    </div>
+</div>
+<div class="container">
+  </div>
+{% endblock %}
